@@ -8,5 +8,6 @@ sudo apt install -y \
 ./console.sh
 ./fonts.sh
 ./vscode.sh
+./toolbox.sh
 ./openssl.sh
 ./navicat.sh
