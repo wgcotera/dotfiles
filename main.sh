@@ -11,3 +11,4 @@ sudo apt install -y \
 ./toolbox.sh
 ./openssl.sh
 ./navicat.sh
+./nvm.sh
