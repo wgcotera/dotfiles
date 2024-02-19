@@ -35,4 +35,8 @@ cd ~/Downloads/Navicat-Linux/bin
 sudo ./navicat-patcher /opt/navicat
 sudo ./navicat-keygen --text ./RegPrivateKey.pem
 
+# Delete everything inside Downloads folder
+rm -rf ~/Downloads/*
 
+# add alias to /opt/navicat/AppRun
+echo "alias navicat='/opt/navicat/AppRun'" >> ~/.bashrc
