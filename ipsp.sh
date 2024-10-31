@@ -6,13 +6,17 @@ mkdir ~/Documents/ipsp && cd ~/Documents/ipsp
 git clone git@github.com:SantaPriscilaDevs/SPErp.git
 
 cd SPErp
+sudo apt install redis
+sudo service redis start
 
 mv ~/Downloads/.env ~/Documents/ipsp/SPErp/.env
 mv ~/Downloads/public.pem ~/Documents/ipsp/SPErp/storage/jwt/public.pem
 mv ~/Downloads/private.pem ~/Documents/ipsp/SPErp/storage/jwt/private.pem
 
 # Install PHP required extensions
-sudo apt install php php-gd php-intl php-ftp php-mongodb php-redis php-fileinfo php-mysql php-pgsql php-xsl php-zip php-curl
+sudo apt install php php-gd php-intl php-ftp php-redis php-fileinfo php-mysql php-pgsql php-xsl php-zip php-curl php-dev php-pear php-mbstring
+# Dejar todo default para lo siguiente
+sudo pecl install mongodb
 
 # Install Composer
 curl -sS https://getcomposer.org/installer -o composer-setup.php
